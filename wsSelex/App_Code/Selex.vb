@@ -22,15 +22,15 @@ Imports System.Xml.Serialization
 
 '/ <remarks/>
 <System.CodeDom.Compiler.GeneratedCodeAttribute("wsdl", "2.0.50727.42")> _
-<System.Web.Services.WebServiceAttribute(Namespace:="http://webservices.aspitalia.com/WeatherService")> _
-<System.Web.Services.WebServiceBindingAttribute(Name:="WeatherServiceSoap", Namespace:="http://webservices.aspitalia.com/WeatherService")> _
-Partial Public MustInherit Class ContractFirstWeatherService
+<System.Web.Services.WebServiceAttribute(Namespace:="http://localhost:21479/Selex")> _
+<System.Web.Services.WebServiceBindingAttribute(Name:="SelexSoap", Namespace:="http://localhost:21479/Selex")> _
+Partial Public MustInherit Class ContractFirstSelex
     Inherits System.Web.Services.WebService
 
     '/ <remarks/>
     <System.Web.Services.WebMethodAttribute()> _
-    <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://webservices.aspitalia.com/WeatherService/GetTemperature", RequestNamespace:="http://webservices.aspitalia.com/WeatherService", ResponseNamespace:="http://webservices.aspitalia.com/WeatherService", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)> _
-    Public Overridable Function GetTemperature(ByVal cityName As String) As Double
+    <System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://localhost:21479/Selex/GetSelex", RequestNamespace:="http://localhost:21479/Selex", ResponseNamespace:="http://localhost:21479/Selex", Use:=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle:=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)> _
+    Public Overridable Function GetSelex(ByVal EAN As String) As String
 
     End Function
 End Class
